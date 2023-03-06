@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+       <link rel="stylesheet" href="style1.css">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Personal Portfolio</title>
+       <link rel="icon" href="portfolio.png">
+       
+</head>
+<body>
+       
+       <div class="container">
+              <nav>
+                     <div class="logo">Folio<b>.</b></div>
+                     <ul class="navItems">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Skills</a></li>
+                     <li><a href="#">Projects</a></li>
+                     </ul>
+                     <div class="links">
+                     <a href="https://www.linkedin.com/in/jean-lorenz-recato-31a6b6249/"><i class="fab fa-linkedin"></i></a>
+                     <a href="https://www.facebook.com/DjinnLorenz/"><i class="fab fa-facebook"></i></a>
+                     <a href="https://github.com/LullabyOfLies"><i class="fab fa-github"></i></a>
+                    
+              </nav>
+              <div class="wrapper">
+                     <div class="cols cols0">
+                     <span class="topline">Hello</span>
+                     <h1>I'm <span class="multiText"></span></h1>
+                     <p id="pid">Welcome to my personal webpage!</p>
+                     <div class="btns">
+                            <button class="btn">Download CV</button>
+                            <button class="btn">Connect with Me</button>
+                     </div>
+                     </div>
+                     <div class="cols cols1">
+                            <div class="imgbox">
+                                   <img src="img1.png">
+                            </div>
+                     </div>
+              </div>
+       </div>
+      
+
+       <!-- javascript cdn -->
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+       <script>
+              var typingEffect = new Typed(".multiText",{
+                     strings : ["Jean","a Developer","a Student", "a Gamer"],
+                     loop : true,
+                     typeSpeed : 100,
+                     backSpeed : 80,
+                     backDelay : 1500
+              })
+       </script>
+      
+       <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+       <script>
+         function addDarkmodeWidget() {
+           new Darkmode().showWidget();
+           changep();
+         }
+         window.addEventListener('load', addDarkmodeWidget);
+         const options = {
+              bottom: '64px', // default: '32px'
+              right: 'unset', // default: '32px'
+              left: '32px', // default: 'unset'
+              time: '0.5s', // default: '0.3s'
+              mixColor: '#fff', // default: '#fff'
+              backgroundColor: '#fff',  // default: '#fff'
+              buttonColorDark: '#100f2c',  // default: '#100f2c'
+              buttonColorLight: '#fff', // default: '#fff'
+              saveInCookies: false, // default: true,
+              label: '🌓', // default: ''
+              autoMatchOsTheme: true // default: true
+              
+              }
+              const darkmode =  new Darkmode();
+       darkmode.toggle();
+       console.log(darkmode.isActivated()) // will return true   
+       </script> -->
+     
+      
+       
+</body>
+</html>
