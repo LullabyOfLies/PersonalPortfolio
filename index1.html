@@ -11,25 +11,25 @@
        
 </head>
 <body>
-       
+       <section class="home" id="home">
        <div class="container">
-              <nav>
+              <nav id="NavBar">
                      <div class="logo">Folio<b>.</b></div>
                      <ul class="navItems">
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#">Skills</a></li>
+                     <li><a href="index1.html">Home</a></li>
+                     <li><a href="#about" onclick="">About</a></li>
+                     <li><a href="#skills">Skills</a></li>
                      <li><a href="#">Projects</a></li>
                      </ul>
                      <div class="links">
                      <a href="https://www.linkedin.com/in/jean-lorenz-recato-31a6b6249/"><i class="fab fa-linkedin"></i></a>
                      <a href="https://www.facebook.com/DjinnLorenz/"><i class="fab fa-facebook"></i></a>
                      <a href="https://github.com/LullabyOfLies"><i class="fab fa-github"></i></a>
-                    
+                    </div>
               </nav>
               <div class="wrapper">
                      <div class="cols cols0">
-                     <span class="topline">Hello</span>
+                    
                      <h1>I'm <span class="multiText"></span></h1>
                      <p id="pid">Welcome to my personal webpage!</p>
                      <div class="btns">
@@ -44,7 +44,50 @@
                      </div>
               </div>
        </div>
-      
+       </section>
+
+      <section class="about" id="about">
+       <div class="container1">
+              <nav class="aboutnav">
+                     <ul class="navItems1">
+                            <li><a href="#">About</a></li>
+                     </ul>
+              </nav>
+              <div class="aboutwrapper">
+
+                   <div class="cols cols1">
+                            <div class="imgbox1">
+                                   <img src="img3copy.JPG">
+                            </div> 
+                   </div>
+
+              <div class="cols cols0" style="display: grid; place-items: center;">
+                     <h2>My name is<span class="multiText1"></span></h2>
+                            <h3>and I am Front-End Developer.</h3>
+
+                            <p id="mission">My mission is to secure an internship in WEB DEVELOPMENT that will provide me with hands-on experience and the opportunity to enhance<br>my coding, web design, and project management skills.<br><br>I am committed to utilizing the latest technologies and any means necessary to pursue my goals and deliver innovative solutions that contribute to the success of the organization. Through collaboration<br>with colleagues and mentors, I aim to develop a deep understanding<br>of industry best practices and to deliver high-quality products.<br>My ultimate goal is to build a successful career in web development<br>and to make meaningful contributions to the field.
+                             </p>
+
+              </div>
+              </div>
+
+       </div>
+       </section>
+       <section class="skills" id="skills">
+              <div class="container2">
+                     <nav class="skillnav">
+                            <ul class="navItems2">
+                            <li><a href="#skills">Skills</a></li>
+                             </ul>
+                     </nav>
+                     <div class="skillswrapper">
+                            
+                                  
+                            </div>
+                     </div>
+              </div>
+       </section>
+
 
        <!-- javascript cdn -->
        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -56,9 +99,16 @@
                      backSpeed : 80,
                      backDelay : 1500
               })
+              var typingEffect = new Typed(".multiText1",{
+                     strings : [" Jean Lorenz Recato"," Jean Lorenz Recato"," Jean Lorenz Recato", " Jean Lorenz Recato"],
+                     loop : true,
+                     typeSpeed : 50,
+                     backSpeed : 60,
+                     backDelay : 1500
+              })
        </script>
       
-       <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
        <script>
          function addDarkmodeWidget() {
            new Darkmode().showWidget();
@@ -79,12 +129,45 @@
               autoMatchOsTheme: true // default: true
               
               }
-              const darkmode =  new Darkmode();
-       darkmode.toggle();
+              const darkmode = new Darkmode(options);
+              darkmode.showWidget();
        console.log(darkmode.isActivated()) // will return true   
-       </script> -->
-     
+       </script>
+       
+       <script>
+              let links = document.querySelectorAll('a[href^="#"]');
+ 
+              links.forEach(link => {
+              link.addEventListener('click', function(e) {
+              e.preventDefault();
+              let href = this.getAttribute('href');
+              let target = document.querySelector(href);
+              let offsetTop = target.offsetTop;
+              
+              window.scrollTo({
+                     top: offsetTop,
+                     behavior: 'smooth'
+     });
+   });
+ });
+       </script>
       
+      <script>
+       window.onscroll = function() {myFunction()};
+       
+       var NavBar = document.getElementById("NavBar");
+       var sticky = NavBar.offsetTop;
+       
+       /* Function to stick the nav bar */
+       function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                     NavBar.classList.add("sticky")
+              }
+              else {
+                     NavBar.classList.remove("sticky");
+              }
+       }
+   </script>
        
 </body>
 </html>
