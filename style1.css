@@ -27,9 +27,12 @@ html {
 
 }
 .container2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
        width: 100%;
        min-height: 100vh;
-       background:#C3B7A1;
+       background: linear-gradient(to bottom, #040f26, #001b42, #002460, #002d7e, #00359d, #1b3daf, #2e44c1, #3f4cd3, #4e57dd, #5c63e8, #6a6ef2, #777afd);
 
 }
 .about{
@@ -212,11 +215,15 @@ b{
 .skillswrapper{
        display: flex;
        position: relative;
-       width: 100%;
-       height: calc(100vh-80px);
+       width: 420px;
+       padding: 50px 0;
        justify-content: center;
        align-items: center;
        overflow: hidden;
+       background-color: white;
+       border-radius: 8px;
+       flex-direction: column;
+       row-gap: 30px;
        
 }
 .wrapper::before{
@@ -310,78 +317,40 @@ h2{
        
 }
 
-
-
-
 /* skills start */
-/* .skill {
-       margin-bottom: 35px;
+.circular-progress{
        position: relative;
-       overflow-x:hidden;
-              }
+       height: 250px;
+       width: 250px;
+       border-radius: 50%;
+       /* background-color: #f0ff; */
+       background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+       display: flex;
+       align-items: center;
+       justify-content: center;
        
-              .skill > p {
-       font-size: 18px;
-       font-weight: 700;
-              color: #1a1716;
-              margin: 0;
-              }
-       
-              .skill:before {
-       width: 100%;
-       height: 10px;
-              content: "";
-       display: block;
+}
+.circular-progress::before{
+       content: "";
        position: absolute;
-       background: #959595;
-       bottom: 0;
-              }
+       height: 210px;
+       width: 210px;
+       border-radius: 50%;
+       background-color: #fff;
        
-              .skill-bar {
-       width: 100%;
-       height: 10px;
-       background:#f4392f;
-       display: block;
+}
+.progress-value{
        position: relative;
-              }
-       
-              .skill-bar span {
-              position: absolute;
-              border-top: 5px solid #f4392f;
-       top: -30px;
-              padding: 0;
-       font-size: 18px;
-       padding: 3px 0;
+       font-size: 40px;
+       font-weight: 600;
+       color: #7d2ae8;
+
+}
+.text{
+       font-size: 30px;
        font-weight: 500;
-              }
-
-              .skill-bar {
-       position: relative;
-              }
-
-              .skill1 .skill-count1 {
-       right: 0;
-              }
-       
-              .skill1 {
-       width: 95%;
-              }
-       
-              .skill2 {
-              : 85%;
-              }
-       
-              .skill2 .skill-count2 {
-       right: 0;
-              }
-       
-              .skill3{
-       width: 75%;
-              }
-       
-              .skill3 .skill-count3 {
-       right: 0;
-              } */
+       color: #606060;
+}
 /* skills end */
 
 .multiText{

@@ -75,15 +75,12 @@
        </section>
        <section class="skills" id="skills">
               <div class="container2">
-                     <nav class="skillnav">
-                            <ul class="navItems2">
-                            <li><a href="#skills">Skills</a></li>
-                             </ul>
-                     </nav>
+                     <!-- needs a header tag of skills -->
                      <div class="skillswrapper">
-                            
-                                  
+                            <div class="circular-progress">
+                                   <span class="progress-value">0%</span>
                             </div>
+                            <span class="text">HTML</span>
                      </div>
               </div>
        </section>
@@ -168,6 +165,25 @@
               }
        }
    </script>
+       <script>
+              let circularProgress = document.querySelector(".circular-progress"),
+                     progressValue = document.querySelector(".progress-value");
+              let progressStartValue = 0,
+              progressEndValue = 90,
+              speed = 100
+
+              let progress = setInterval(() => {
+                     progressStartValue++
+
+                     progressValue.textContent = `${progressStartValue}%`
+                     circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+                     if(progressStartValue == progressEndValue){
+                            clearInterval(progress);
+                     }
+                    
+              }, speed);
+       </script>
        
 </body>
 </html>
