@@ -14,11 +14,10 @@
        <section class="home" id="home">
        <div class="container">
               <nav id="NavBar">
-                     <div class="logo">Folio<b>.</b></div>
+                     <div class="logo">JLR<b>.</b></div>
                      <ul class="navItems">
                      <li><a href="index1.html">Home</a></li>
                      <li><a href="#about" onclick="">About</a></li>
-                     <li><a href="#skills">Skills</a></li>
                      <li><a href="#">Projects</a></li>
                      </ul>
                      <div class="links">
@@ -46,6 +45,53 @@
        </div>
        </section>
 
+       <section class="projects" id="projects">
+              <div class="header">
+                     <h1>PROJECTS</h1>
+                     <p>These are the projects that I've done and currently doing</p>
+                   </div>
+                   <div class="projectswrapper">
+                   <div class="row"> 
+                     <div class="column">
+                       <img src="/s1.jpg" style="width:100%">
+                       <img src="/s2.jpg" style="width:100%">
+                       
+                      
+                     </div>
+                     <div class="column">
+                       <img src="/s3.jpg" style="width:100%">
+                       <img src="/s4.jpg" style="width:100%">
+                     </div>  
+              </div>
+       </section>
+
+       <section class="skills" id="skills">
+              <!-- <div class="container2"> -->
+                     <!-- needs a header tag of skills -->
+                     <div class="skillswrapper">
+                            <div class="cols cols1" style="display: grid; place-items: center;">
+                                   <h1 style=" font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem); color: white;" >Technical Skills</h1>
+                                   <h3 style="color: white;">I believe myself as an enthusiastic learner.<br>Here are the languages and tools I've worked with.</h3>
+                            </div>
+       
+                            <div class="cols cols0" style="border-left: 1px solid black;">
+                                   <ul class="skillslanguage">
+                                          <li>C</li>
+                                          <li>Python</li>
+                                          <li>javascript</li>
+                                          <li>HTML</li>
+                                          <li>CSS</li>
+                                   </ul>
+                            </div>
+
+                            <!-- <div class="circular-progress">
+                                   <span class="progress-value">0%</span>
+                            </div>
+                            <span class="text">HTML</span> -->
+                     </div>
+              <!-- </div> -->
+       </section>
+
       <section class="about" id="about">
        <div class="container1">
               <nav class="aboutnav">
@@ -55,7 +101,7 @@
               </nav>
               <div class="aboutwrapper">
 
-                   <div class="cols cols1">
+                   <div class="cols cols1">             
                             <div class="imgbox1">
                                    <img src="img3copy.JPG">
                             </div> 
@@ -67,23 +113,13 @@
 
                             <p id="mission">My mission is to secure an internship in WEB DEVELOPMENT that will provide me with hands-on experience and the opportunity to enhance<br>my coding, web design, and project management skills.<br><br>I am committed to utilizing the latest technologies and any means necessary to pursue my goals and deliver innovative solutions that contribute to the success of the organization. Through collaboration<br>with colleagues and mentors, I aim to develop a deep understanding<br>of industry best practices and to deliver high-quality products.<br>My ultimate goal is to build a successful career in web development<br>and to make meaningful contributions to the field.
                              </p>
-
               </div>
               </div>
 
        </div>
        </section>
-       <section class="skills" id="skills">
-              <div class="container2">
-                     <!-- needs a header tag of skills -->
-                     <div class="skillswrapper">
-                            <div class="circular-progress">
-                                   <span class="progress-value">0%</span>
-                            </div>
-                            <span class="text">HTML</span>
-                     </div>
-              </div>
-       </section>
+       
+       
 
 
        <!-- javascript cdn -->
@@ -165,7 +201,7 @@
               }
        }
    </script>
-       <script>
+       <!-- <script>
               let circularProgress = document.querySelector(".circular-progress"),
                      progressValue = document.querySelector(".progress-value");
               let progressStartValue = 0,
@@ -183,7 +219,7 @@
                      }
                     
               }, speed);
-       </script>
+       </script> -->
        
 </body>
 </html>

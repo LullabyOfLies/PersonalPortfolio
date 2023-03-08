@@ -32,7 +32,7 @@ html {
        align-items: center;
        width: 100%;
        min-height: 100vh;
-       background: linear-gradient(to bottom, #040f26, #001b42, #002460, #002d7e, #00359d, #1b3daf, #2e44c1, #3f4cd3, #4e57dd, #5c63e8, #6a6ef2, #777afd);
+       /* background: linear-gradient(to bottom, #040f26, #001b42, #002460, #002d7e, #00359d, #1b3daf, #2e44c1, #3f4cd3, #4e57dd, #5c63e8, #6a6ef2, #777afd); */
 
 }
 .about{
@@ -212,7 +212,103 @@ b{
        align-items: center;
        overflow: hidden;
 }
+
 .skillswrapper{
+       display: flex;
+       position: relative;
+       width: 100%;
+       height: calc(100vh-80px);
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       padding: 10px;
+       border: 1px solid #080505;
+       background-image: linear-gradient(to right top, #22616b, #2b6b77, #357684, #3e8091, #488b9e, #5193a8, #599cb1, #62a4bb, #6bacc4, #74b3cc, #7dbbd5, #86c3de);
+       
+}
+
+.projectswrapper{
+       display: flex;
+       position: relative;
+       width: 100%;
+       height: calc(100vh-80px);
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       padding: 10px;
+       border: 1px solid #080505;
+       background-image: linear-gradient(to right top, #22616b, #2b6b77, #357684, #3e8091, #488b9e, #5193a8, #599cb1, #62a4bb, #6bacc4, #74b3cc, #7dbbd5, #86c3de);
+              
+  
+}
+
+/* responsive image gallery */
+.header {
+       text-align: center;
+       padding: 32px;
+     }
+     
+     .row {
+       display: -ms-flexbox; /* IE10 */
+       display: flex;
+       -ms-flex-wrap: wrap; /* IE10 */
+       flex-wrap: wrap;
+       padding: 0 2px;
+       justify-items: center;
+       align-items: center;
+     }
+     
+     /* Create four equal columns that sits next to each other */
+     .column {
+       -ms-flex: 50%; /* IE10 */
+       flex: 50%;
+       max-width: 50%;
+       padding: 0 4px;
+     }
+     
+     .column img {
+       margin-top: 10px;
+       vertical-align: middle;
+       width: 50%;
+     }
+
+    img:hover{
+       opacity: 0.5;
+    }
+     /* Responsive layout - makes a two column-layout instead of four columns */
+     @media screen and (max-width: 800px) {
+       .column {
+         -ms-flex: 50%;
+         flex: 50%;
+         max-width: 50%;
+       }
+     }
+     
+     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+     @media screen and (max-width: 600px) {
+       .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+       }
+     }
+/* ends */
+
+
+/* section projects */
+.projects{
+       display: grid;
+       place-items: center;
+}
+/* projects */
+.skillslanguage{
+       font-size: 25px;
+       font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem);
+       letter-spacing: 3px;
+       text-decoration: none;
+       text-transform: capitalize;
+}
+/* .skillswrapper{
        display: flex;
        position: relative;
        width: 420px;
@@ -225,7 +321,7 @@ b{
        flex-direction: column;
        row-gap: 30px;
        
-}
+} */
 .wrapper::before{
        
        position: absolute;  
@@ -316,14 +412,30 @@ h2{
        color: #3d535f;
        
 }
+h3{    
+       display: flex;
+       justify-items: center;
+       align-items: center;
+       flex-direction: column;
+       font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem);
+}
 
-/* skills start */
-.circular-progress{
+ul li{
+       display: grid;
+       /* justify-items: center;
+       align-items: center; */
+       place-items: center;
+       list-style: none;
+       font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem);
+       color: white;
+}
+
+/* .circular-progress{
        position: relative;
        height: 250px;
        width: 250px;
        border-radius: 50%;
-       /* background-color: #f0ff; */
+     
        background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
        display: flex;
        align-items: center;
@@ -351,7 +463,7 @@ h2{
        font-weight: 500;
        color: #606060;
 }
-/* skills end */
+ */
 
 .multiText{
        color: #7f00ff;
